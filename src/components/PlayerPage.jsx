@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PlayerForm from "./PlayerForm";
+import LetterList from "./LetterList";
 
 const PlayerBox = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ function PlayerPage() {
   return (
     <PlayerBox>
       <PlayerForm />
+      <LetterList />
     </PlayerBox>
   );
 }
