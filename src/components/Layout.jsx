@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import PlayerButton from "../PlayerButton";
+import PlayerButton from "./PlayerButton";
 
 const imagePath = "/images/Gen.jpg";
 
@@ -25,7 +25,9 @@ const Layout = () => {
   return (
     <StyledLayout>
       <StyledHeader>젠지 선수 응원 페이지</StyledHeader>
-      <nav>{/* <PlayerButton /> */}</nav>
+      <nav>
+        <PlayerButton />
+      </nav>
     </StyledLayout>
   );
 };
