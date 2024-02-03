@@ -21,13 +21,17 @@ const StyledLayout = styled.div`
   color: white;
 `;
 
+const StyledNav = styled.nav`
+  margin-top: 4rem;
+`;
+
 const Layout = () => {
   return (
     <StyledLayout>
       <StyledHeader>젠지 선수 응원 페이지</StyledHeader>
-      <nav>
+      <StyledNav>
         <PlayerButton />
-      </nav>
+      </StyledNav>
     </StyledLayout>
   );
 };
