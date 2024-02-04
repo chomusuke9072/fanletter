@@ -25,12 +25,12 @@ const StyledNav = styled.nav`
   margin-top: 4rem;
 `;
 
-const Layout = () => {
+const Layout = ({ players }) => {
   return (
     <StyledLayout>
       <StyledHeader>젠지 선수 응원 페이지</StyledHeader>
       <StyledNav>
-        <PlayerButton />
+        <PlayerButton players={players} />
       </StyledNav>
     </StyledLayout>
   );

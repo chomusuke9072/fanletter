@@ -1,13 +1,11 @@
 import GlobalStyle from "./GlobalStyle.jsx";
-import Layout from "./components/Layout.jsx";
-import PlayerPage from "./components/PlayerPage.jsx";
+import Router from "./shared/Router.js";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Layout />
-      <PlayerPage />
+      <Router />
     </>
   );
 }

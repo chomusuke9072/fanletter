@@ -9,11 +9,11 @@ const PlayerBox = styled.div`
   align-items: center;
 `;
 
-function PlayerPage() {
+function PlayerPage({ letterValue }) {
   return (
     <PlayerBox>
       <PlayerForm />
-      <LetterList />
+      <LetterList letterValue={letterValue} />
     </PlayerBox>
   );
 }
