@@ -26,7 +26,7 @@ const Router = () => {
       name: "Lehends",
     },
   ];
-  const [letterValue, setLetterValue] = useState(fakeData);
+  const [letters, setLetters] = useState(fakeData);
 
   return (
     <BrowserRouter>
@@ -34,11 +34,7 @@ const Router = () => {
         <Route
           path="/"
           element={
-            <Home
-              players={players}
-              letterValue={letterValue}
-              setLetterValue={setLetterValue}
-            />
+            <Home players={players} letters={letters} setLetters={setLetters} />
           }
         />
       </Routes>
